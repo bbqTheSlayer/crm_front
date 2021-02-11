@@ -1,0 +1,59 @@
+.pt10 {
+  padding-top: 10px; }
+
+.fw100 {
+  font-weight: 100 !important; }
+
+#notification {
+  min-width: 300px; }
+
+.notification-hidden {
+  display: none; }
+
+.notifi-success {
+  border-left: 10px solid #42f235; }
+
+.notifi-warning {
+  border-left: 10px solid #eef20c; }
+
+.notifi-error {
+  border-left: 10px solid #f23322; }
+
+.notifi-title {
+  padding: 10px 0 10px 10px; }
+
+.notifi-description {
+  padding: 10px 0 10px 10px; }
+
+.notification-fadein {
+  position: fixed;
+  background-color: #ebebeb;
+  animation-name: slidein;
+  animation-duration: 380ms;
+  visibility: visible;
+  animation-fill-mode: forwards; }
+
+@keyframes slidein {
+  0% {
+    right: -450px;
+    visibility: visible; }
+  100% {
+    top: 65px;
+    right: 35px;
+    visibility: visible; } }
+
+.notification-fadeout {
+  position: fixed;
+  background-color: #ebebeb;
+  animation-name: slideout;
+  animation-duration: 380ms;
+  animation-fill-mode: forwards; }
+
+@keyframes slideout {
+  0% {
+    top: 65px;
+    right: 35px;
+    visibility: visible; }
+  100% {
+    right: -450px;
+    visibility: hidden; } }

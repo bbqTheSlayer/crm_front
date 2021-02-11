@@ -1,0 +1,1 @@
+export const setState = (payload) => {return {type: 'SET_STORE', payload: payload}}

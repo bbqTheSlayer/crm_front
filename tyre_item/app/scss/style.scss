@@ -1,0 +1,54 @@
+.universal-curtain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    height: 100vh;
+
+    position: fixed;
+
+    left: 100%;
+
+    top: 0;
+
+    background-color: #ffffff;
+}
+
+
+.curtain-shown {
+    left: 0;
+}
+
+.curtain-animate-shown {
+    animation: HideCurtain 0.380s ease-in;
+}
+
+.curtain-hidden {
+    left: 100%;
+}
+
+.curtain-animate-hidden {
+    animation: ShowCurtain 0.380s ease-in;
+}
+
+@keyframes HideCurtain {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes ShowCurtain {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 100%;
+    }
+}

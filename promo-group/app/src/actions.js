@@ -1,0 +1,1 @@
+export function setStore(payload) {return { type: 'SET_STORE', payload: payload }}
